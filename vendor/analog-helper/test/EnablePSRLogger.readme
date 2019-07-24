@@ -1,0 +1,14 @@
+   How to Enable Analog-PSR Logger 
+
+     -> Download composer.phar from https://getcomposer.org/composer.phar
+     -> Download PSR Logger from https://github.com/php-fig/log [Downloaded log-master zip file]
+     -> log-master director or in top directory put composer.phar file
+
+     -> Using command prompt go to log-master directory
+     -> execute PHP command : $....> php composer.phar update
+
+     -> put Psr and Vendor directory into lib/Analog
+     -> Put the following lines in AnalogHelper.php 
+
+ require_once (DOC_ROOT.'lib/Analog/vendor/autoload.php');
+ require_once DOC_ROOT.'lib/Analog/Logger.php';
